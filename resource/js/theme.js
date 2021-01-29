@@ -1,5 +1,4 @@
 import "../scss/style.scss"; 
-// import 'bootstrap';
 
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -38,21 +37,3 @@ companyInfoBtn.addEventListener("click", () => {
 // set date
 date.innerHTML = new Date().getFullYear();
 
-const langItem = document.querySelector('.test');
-document.addEventListener('click', (e) => {
-    console.log(e.target.className);
-    if (e.target.className === 'test selected-lang underline') {
-        const parentItems = e.target.parentNode;
-        const children =  parentItems.querySelectorAll('.hidden-lang');
-        // console.log();
-        for (let i = 0; i < children.length; i++) {
-            console.log(children[i]);
-            children[i].classList.toggle('visible');
-            // children[child].classList.toggle('visible');
-        }
-    }
-    // companyInfoLinks.classList.toggle('visible');
-    //Toggle the child but don't include them in the hide selector using .not()
-    // $('li > ul').not($(this).children("ul").toggle()).hide();
-
-});
