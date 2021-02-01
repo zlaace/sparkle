@@ -209,12 +209,6 @@
       line-height: 15px;
     }
 
-    p {
-      line-height: 13px;
-      font-size: 11px;
-      margin: 0;
-    }
-
     .footer-bg {
       padding-left: 20px;
       padding-right: 20px;
@@ -252,15 +246,21 @@
             }
           }
         }
-      }  
-      
-      .rights-privacy-container {
-        flex-direction: column;
-  
-        .rigths {
-          display: flex;
-          flex-wrap: wrap;
-          margin-bottom: 5px;
+        
+        .rights-privacy-container {
+          flex-direction: column;
+
+          p {
+            line-height: 13px;
+            font-size: 11px;
+            margin: 0;
+          }
+    
+          .rigths {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+          }
         }
       }
     }

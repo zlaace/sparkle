@@ -2,8 +2,7 @@ const path = require("path");
 
 module.exports = {
 	entry: {
-		main: "./resource/js/theme.js", 
-		vendor: "./resource/vendor/vendor.js"
+		main: "./resource/js/theme.js"
 	},
 	module: {
 		rules: [

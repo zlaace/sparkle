@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -18,71 +18,69 @@
   <body>
     <div class="site-wrap">
       <!-- header -->
-        <header class="site-header">
-        <!-- <nav class="nav"> -->
-          <div class="nav-center">
+      <header class="site-header">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <a href="#">
+              <img class="site-logo" src="./img/sparkle-black-logo.png"  alt="SparkleHeart logo">
+            </a>
 
-            <!-- nav header -->
-            <div class="nav-header">
-              <a href="#">
-                <img class="site-logo" src="./img/sparkle-black-logo.png"  alt="SparkleHeart logo">
-              </a>
-
-              <!-- toggle -->
-              <button class="nav-toggle" type="button">
-                <span class="hamburger"></span>
-              </button>
-            </div>
-
-            <!-- nav links and language switcher  -->
-            <div class="nav-links-wrap">
-              <div class="lang-switcher-mobile">   
-                <a class="selected lang-item underline" href="#">LV</a>
-                <a class="lang-item underline" href="#">ENG</a>
-                <a class="lang-item underline" href="#">RU</a>
-              </div>
-
-              <!-- links -->
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a class="nav-link underline" href="#">Ideja</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link underline" href="#">Piesaki Sapni</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link underline" href="#">Uzņēmējiem</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link underline" href="#">Sapņu banka</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link underline" href="#">Sapņus atbalsta</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link underline" href="#">99 Iedvesmas stāsti</a>
-                </li>
-              </ul>
-
-              <!-- lang switcher -->
-              <div class="lang-switcher"> 
-                    <select>
-                      <option class="underline" value="LV">LV</option>
-                      <option class="underline" value="RU">RU</option>
-                      <option class="underline" value="EN">EN</option>
-                    </select> 
-              </div>
-            </div>
+            <!-- toggle -->
+            <button class="nav-toggle" type="button">
+              <span class="hamburger"></span>
+            </button>
           </div>
-        </nav>  
-      </header>
+
+          <!-- nav links and language switcher  -->
+          <div class="nav-links-wrap">
+            <div class="lang-switcher-mobile">
+              <a class="selected lang-item underline" href="#">LV</a>
+              <a class="lang-item underline" href="#">ENG</a>
+              <a class="lang-item underline" href="#">RU</a>
+            </div>
+
+            <!-- links -->
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link underline" href="#">Ideja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#">Piesaki Sapni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#">Uzņēmējiem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#">Sapņu banka</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#">Sapņus atbalsta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#">99 Iedvesmas stāsti</a>
+              </li>
+            </ul>
+
+            <!-- lang switcher desktop -->
+            <ul class="lang-dropdown" id="js-dropdown">
+              <input id="js-input" type="text" value="LV" readonly="">
+              <ul class="lang-options" id="js-options">
+                <li langOption="LV">LV</li>
+                <li langOption="ENG">ENG</li>
+                <li langOption="RU">RU</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
       <!-- site content-->
       <main class="site-content">
         <!-- introduction video -->
         <div class="video-container">
-          <!-- <div class="video-container" style="background-color: blue;"> -->
-          <button class="video-btn button-color">         
+          <button class="video-btn button-color">
             <i class="fas fa-play"></i>
           </button>
         </div>
@@ -94,7 +92,7 @@
         </div>
 
         <!-- Home page gallery -->
-        <div class="gallery-container">     
+        <div class="gallery-container container-fluid">
           <div class="images-wrap-mobile images-wrap">
             <div class="home-img-wrap">
               <img class="img-responsive img-1" src="./img/zanda.jpg" alt="Zanda">
@@ -104,7 +102,7 @@
             </div>
           </div>
           <div class="images-wrap">
-            <div class="home-img-wrap img-wrap">  
+            <div class="home-img-wrap img-wrap">
               <img class="img-responsive" src="./img/brinuma-meita.jpg" alt="Brinuma meita">
               <img class="img-responsive" src="./img/alina.jpg" alt="Alina">
             </div>   
@@ -130,7 +128,7 @@
 
           <!-- Form -->
           <div class="form-wrap">
-            <form class="form" action="#">  
+            <form class="form" action="#">
               <h2>sazināties ar mums</h2>
               <div class="name-email-inputs">
                 <input class="name-input form-input" type="text" placeholder="Vārds, Uzvārds*" required>
@@ -149,24 +147,22 @@
         </div>
 
         <!-- Supporters -->
-        <div class="supporters">
-          <!-- <div class="supporters-container"> -->
-            <h3>Atbalstītāji</h3>
-            <div class="logo-container">
-              <div class="">
-                <img class="img-responsive logo" src="./img/teikums-logo.svg" alt="Teikums logo">
-              </div>
-              <div class="">
-                <img class="img-responsive logo" src="./img/sem-logo.svg" alt="SEM logo">
-              </div>
-              <div class="">
-                <img class="img-responsive logo" src="./img/citybee-logo.svg" alt="Citybee logo">
-              </div>
-              <div class="linearis-container">
-                <img class="img-responsive logo-linearis" src="./img/linearis-logo.svg" alt="Linearis logo">
-              </div>
+        <div class="supporters-container">
+          <h3>Atbalstītāji</h3>
+          <div class="logo-container">
+            <div class="">
+              <img class="img-responsive logo" src="./img/teikums-logo.png" alt="Teikums logo">
             </div>
-          <!-- </div> -->
+            <div class="">
+              <img class="img-responsive logo" src="./img/sem-logo.png" alt="SEM logo">
+            </div>
+            <div class="">
+              <img class="img-responsive logo" src="./img/citybee-logo.png" alt="Citybee logo">
+            </div>
+            <div class="linearis-container">
+              <img class="img-responsive logo-linearis" src="./img/linearis-logo.png" alt="Linearis logo">
+            </div>
+          </div>
         </div>
       </main>
 
@@ -225,10 +221,10 @@
                       <i class="fab fa-instagram instagram-icon" aria-hidden="true"></i>
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
+
             <div class="rights-privacy-container">
               <div class="rigths">
                 <p>
@@ -242,7 +238,10 @@
           </div>
         </div>
       </footer>
-      <button id="scrollBtn" type="button"><i class="fas fa-angle-up"></i></button>
-    </div>  
-  </body>           
+
+      <button id="scrollBtn" type="button">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </div>
+  </body>
 </html>
